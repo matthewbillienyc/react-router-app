@@ -11,18 +11,20 @@ export default React.createClass({
     this.setState({years: years})
   },
   
-  componentWillMount() {
-    debugger;
+  componentDidMount() {
+    this.getYears()
   },
   
   getYears() {
-    fetch('http://127.0.0.1:8080/v1/years')
+    fetch('http://localhost:3000/v1/years')
       .then(function(response){
-        return response.json().years
+        console.log(response)
       })
   },
 
   render() {
-    <Years/>
+    return (
+        <Years/>
+    )
   }
 })
