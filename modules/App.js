@@ -10,7 +10,7 @@ export default React.createClass({
         <h1>React Router Tutorial</h1>
         <ul role="nav">
           <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/repos">Repos</NavLink></li>
+          <li><NavLink to="/years">Years</NavLink></li>
           <li><NavLink to="/" onlyActiveOnIndex={true}>Home</NavLink></li>
         </ul>
         {this.props.children || <Home/> }

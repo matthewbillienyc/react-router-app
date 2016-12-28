@@ -1,7 +1,7 @@
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './index.js',
+  entry: ['whatwg-fetch', './index.js'],
 
   output: {
     path: 'public',
